@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Todo</title>
+  <script src="https://kit.fontawesome.com/bc93a27d73.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./todo-app.css">
+</head>
+
+<body>
+
+  <article class="main">
+    <h1>My To-do List</h1>
+
+    <section>
+      <input type="text" placeholder="What's next?">
+      <input type="date">
+      <input type="button" value="Add">
+    </section>
+
+    <section>
+      <div class="TodoSectionTitle">
+        <p class="TodoSectionTitle-Text">Due Today</p>
+        <p class="TodoSectionTitle-RemainingCount">0/4</p>
+      </div>
+      <ul class="DueToday">
+        <li><input type="checkbox"> Buy Food <span>Overdue</span></li>
+        <li><input type="checkbox"> Complete Assignment <i class="far fa-trash-alt"></i></li>
+      </ul>
+    </section>
+
+    <section>
+      <div class="TodoSectionTitle">
+        <p class="TodoSectionTitle-Text">Due Tommorow</p>
+        <p class="TodoSectionTitle-RemainingCount">0/3</p>
+      </div>
+      <ul>
+        <li><input type="checkbox"> Cook Food</li>
+      </ul>
+    </section>
+
+    <section>
+      <div class="TodoSectionTitle">
+        <p class="TodoSectionTitle-Text">Remaining</p>
+        <p class="TodoSectionTitle-RemainingCount">0/3</p>
+      </div>
+      <ul>
+        <li><input type="checkbox"> Workout <span>jan 21</span></li>
+        <li><input type="checkbox"> Shopping <span>jan 21</span></li>
+        <li><input type="checkbox"> Read Book <span>jan 21</span></li>
+      </ul>
+    </section>
+
+  </article>
+
+</body>
+
+</html>

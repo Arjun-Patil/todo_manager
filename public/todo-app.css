@@ -1,0 +1,66 @@
+body {
+  font-family: sans-serif;
+}
+
+.main {
+  margin: 60px auto;
+  max-width: 600px;
+}
+
+/* AddTodo */
+input[type=text], input[type=date] {
+  padding: 6px 12px;
+  font-size: 14px;
+  margin-right: 10px;
+  border-radius: 4px;
+  border: 1px solid #BFB8CC;
+  color: black;
+}
+
+input[type=button] {
+  padding: 6px 22px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  color: white;
+  background-color: #48BB78;
+}
+
+.TodoSectionTitle {
+  display: flex;
+  align-items: center;
+}
+
+.TodoSectionTitle-Text {
+  color: #453C52;
+  letter-spacing: 0.1px;
+}
+
+.TodoSectionTitle-RemainingCount, span, i {
+  color: #453C52;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 0px;
+  padding-left: 15px;
+}
+
+li {
+  font-size: 14px;
+  color: #453C52;
+  letter-spacing: 0.1px;
+  padding-bottom: 7px;
+}
+
+input[type=checkbox] {
+  background-color: #FFFFFF;
+  border: 1px solid #BFB8CC;
+  border-radius: 4px;
+}
+
+.DueToday span {
+  color: red;
+}
