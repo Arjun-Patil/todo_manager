@@ -7,37 +7,47 @@ body {
   max-width: 600px;
 }
 
+h1 {
+  font-size: 2rem;
+}
+
 /* AddTodo */
-input[type=text], input[type=date] {
+input[type="text"],
+input[type="date"] {
   padding: 6px 12px;
   font-size: 14px;
   margin-right: 10px;
   border-radius: 4px;
-  border: 1px solid #BFB8CC;
+  border: 1px solid #bfb8cc;
   color: black;
+  margin: 20px 10px 10px 0;
 }
 
-input[type=button] {
+input[type="button"] {
   padding: 6px 22px;
   font-size: 14px;
   border-radius: 4px;
   border: 1px solid transparent;
   color: white;
-  background-color: #48BB78;
+  background-color: #48bb78;
 }
 
 .TodoSectionTitle {
   display: flex;
   align-items: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .TodoSectionTitle-Text {
-  color: #453C52;
+  color: #453c52;
   letter-spacing: 0.1px;
 }
 
-.TodoSectionTitle-RemainingCount, span, i {
-  color: #453C52;
+.TodoSectionTitle-RemainingCount,
+span,
+i {
+  color: #453c52;
   font-size: 12px;
   margin-left: 10px;
 }
@@ -50,17 +60,32 @@ ul {
 
 li {
   font-size: 14px;
-  color: #453C52;
+  color: #453c52;
   letter-spacing: 0.1px;
   padding-bottom: 7px;
+  /* width: 35%; */
+  width: fit-content;
 }
 
-input[type=checkbox] {
-  background-color: #FFFFFF;
-  border: 1px solid #BFB8CC;
-  border-radius: 4px;
+input[type="checkbox"] {
+  background-color: #ffffff;
+  border: 1px solid #bfb8cc;
+  border-radius: 10px;
 }
 
 .DueToday span {
   color: red;
+}
+
+i {
+  margin-right: 4px;
+  visibility: hidden;
+}
+
+li:hover {
+  background-color: #e1e5ea;
+}
+
+li:hover i {
+  visibility: visible;
 }
