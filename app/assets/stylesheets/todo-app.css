@@ -45,7 +45,6 @@ input[type="button"] {
 }
 
 .TodoSectionTitle-RemainingCount,
-span,
 i {
   color: #453c52;
   font-size: 12px;
@@ -63,8 +62,9 @@ li {
   color: #453c52;
   letter-spacing: 0.1px;
   padding-bottom: 7px;
-  /* width: 35%; */
   width: fit-content;
+  display: flex;
+  align-items: center;
 }
 
 input[type="checkbox"] {
@@ -88,4 +88,10 @@ li:hover {
 
 li:hover i {
   visibility: visible;
+}
+
+.dueDate {
+  margin-left: 10px;
+  font-size: 12px;
+  color: #bfb8cc;
 }

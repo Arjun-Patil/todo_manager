@@ -1,0 +1,14 @@
+
+    <article class="main">
+      <h1>My To-do List</h1>
+
+      <section>
+        <input type="text" placeholder="What's next?" />
+        <input type="date" />
+        <input type="button" value="Add" />
+      </section>
+
+     <%= render partial: "todos-section", locals: { section_title: "Overdue", todos: Todo.overdue } %>
+     <%= render partial: "todos-section", locals: { section_title: "Due Today", todos: Todo.due_today } %>
+     <%= render partial: "todos-section", locals: { section_title: "Due Later", todos: Todo.due_later } %>
+    </article>
