@@ -70,7 +70,7 @@ li {
 input[type="checkbox"] {
   background-color: #ffffff;
   border: 1px solid #bfb8cc;
-  border-radius: 10px;
+  border-radius: 4px;
 }
 
 .DueToday span {
@@ -78,7 +78,7 @@ input[type="checkbox"] {
 }
 
 i {
-  margin-right: 4px;
+  margin-right: 7px;
   visibility: hidden;
 }
 
