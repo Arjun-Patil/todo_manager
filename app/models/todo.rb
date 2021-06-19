@@ -25,6 +25,10 @@ class Todo < ActiveRecord::Base
     all.where(completed: true)
   end
 
+  def self.uncompleted
+    all.where(completed: false)
+  end
+
   def self.to_displayable_list
     all.map { |todo| todo.to_displayable_string }
   end

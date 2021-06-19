@@ -7,7 +7,9 @@
         <ul class="DueToday">
           <li>
             <input type="checkbox" /> <%= todo.todo_text %>
-            <p class="dueDate"> <%= todo.due_date.to_s(:short) %> </p>
+            <% if show_due_date %>
+              <p class="dueDate"> <%= todo.due_date.to_s(:short) %> </p>
+            <% end %>
             <a href=""><i class="far fa-trash-alt"></i></a>
           </li>
         </ul>
