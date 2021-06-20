@@ -1,18 +1,22 @@
- <section>
-    <div class="TodoSectionTitle">
-        <p class="TodoSectionTitle-Text"><%= section_title %></p>
-      <p class="TodoSectionTitle-RemainingCount"><%= todos.completed.count %> / <%= todos.count %></p>
-    </div>
-    <% todos.all.each do |todo| %>
-        <ul class="DueToday">
-          <li>
-            <input type="checkbox" /> <%= todo.todo_text %>
-            <% if show_due_date %>
-              <p class="dueDate"> <%= todo.due_date.to_s(:short) %> </p>
-            <% end %>
-            <a href=""><i class="far fa-trash-alt"></i></a>
-          </li>
-        </ul>
-    <% end %>
+<section>
+  <div class="TodoSectionTitle">
+    <p class="TodoSectionTitle-Text"><%= section_title %></p>
+    <p class="TodoSectionTitle-RemainingCount"><%= todos.completed.count %> / <%= todos.count %></p>
+  </div>
+  <% todos.order(:due_date).each do |todo| %>
+    <ul class="DueToday">
+      <li>
+        <% if todo.completed == true %>
+          <input type="checkbox" checked/> <p><%= todo.todo_text %></p>
+        <% else %>
+          <input type="checkbox"/> <p><%= todo.todo_text %></p>
+        <% end %>
+        <% if show_due_date %>
+          <p class="dueDate"> <%= todo.due_date.to_s(:short) %> </p>
+        <% end %>
+        <a href=""><i class="far fa-trash-alt"></i></a>
+      </li>
+    </ul>
+  <% end %>
 </section>
 

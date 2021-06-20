@@ -1,14 +1,12 @@
 
-    <article class="main">
-      <h1>My To-do List</h1>
-
-      <section>
-        <input type="text" placeholder="What's next?" />
-        <input type="date" />
-        <input type="button" value="Add" />
-      </section>
-
-     <%= render partial: "todos-section", locals: { section_title: "Overdue", todos: Todo.overdue.uncompleted, show_due_date: true } %>
-     <%= render partial: "todos-section", locals: { section_title: "Due Today", todos: Todo.due_today, show_due_date: false } %>
-     <%= render partial: "todos-section", locals: { section_title: "Due Later", todos: Todo.due_later, show_due_date: true } %>
-    </article>
+<article class="main">
+  <h1>My To-do List</h1>
+  <section>
+    <input type="text" placeholder="What's next?" />
+    <input type="date" />
+    <input type="button" value="Add" />
+  </section>
+    <%= render partial: "todos-section", locals: { section_title: "Overdue", todos: Todo.overdue.uncompleted, show_due_date: true } %>
+    <%= render partial: "todos-section", locals: { section_title: "Due Today", todos: Todo.due_today, show_due_date: false } %>
+    <%= render partial: "todos-section", locals: { section_title: "Due Later", todos: Todo.due_later, show_due_date: true } %>
+</article>
