@@ -6,14 +6,12 @@
   <% todos.order(:due_date).each do |todo| %>
     <ul class="DueToday">
       <li>
-        <% if todo.completed == true %>
-          <input type="checkbox" checked/> <p><%= todo.todo_text %></p>
-        <% else %>
-          <input type="checkbox"/> <p><%= todo.todo_text %></p>
-        <% end %>
+        <input type="checkbox" <%= todo.completed ? "checked" : ""%> /> <p><%= todo.todo_text %></p>
+
         <% if show_due_date %>
           <p class="dueDate"> <%= todo.due_date.to_s(:short) %> </p>
         <% end %>
+        
         <a href=""><i class="far fa-trash-alt"></i></a>
       </li>
     </ul>
