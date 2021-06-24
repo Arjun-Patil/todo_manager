@@ -96,6 +96,6 @@ li:hover i {
   color: #bfb8cc;
 }
 
-input:checked + p {
+.todo-completedText {
   text-decoration: line-through;
 }
