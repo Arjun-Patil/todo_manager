@@ -12,8 +12,8 @@ h1 {
 }
 
 /* AddTodo */
-input[type="text"],
-input[type="date"] {
+#todo_text,
+#due_date {
   padding: 6px 12px;
   font-size: 14px;
   margin-right: 10px;
@@ -23,7 +23,7 @@ input[type="date"] {
   margin: 20px 10px 10px 0;
 }
 
-input[type="submit"] {
+.form_submit {
   padding: 6px 22px;
   font-size: 14px;
   border-radius: 4px;
