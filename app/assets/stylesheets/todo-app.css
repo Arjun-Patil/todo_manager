@@ -23,7 +23,7 @@ input[type="date"] {
   margin: 20px 10px 10px 0;
 }
 
-input[type="button"] {
+input[type="submit"] {
   padding: 6px 22px;
   font-size: 14px;
   border-radius: 4px;
