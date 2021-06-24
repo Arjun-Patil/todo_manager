@@ -16,7 +16,10 @@
           <p class="dueDate"> <%= todo.due_date.to_s(:short) %> </p>
         <% end %>
         
-        <a href=""><i class="far fa-trash-alt"></i></a>
+        
+        <%= form_with(url: "/todos/#{todo.id}", method: "delete") do %>
+            <%= image_submit_tag("trash.svg", class: "trashImg") %>
+        <% end %>
       </li>
     </ul>
   <% end %>

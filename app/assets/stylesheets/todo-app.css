@@ -77,8 +77,9 @@ input[type="checkbox"] {
   color: red;
 }
 
-i {
-  margin-right: 7px;
+.trashImg {
+  margin-left: 7px;
+  width: 55%;
   visibility: hidden;
 }
 
@@ -86,7 +87,7 @@ li:hover {
   background-color: #e1e5ea;
 }
 
-li:hover i {
+li:hover .trashImg {
   visibility: visible;
 }
 
