@@ -1,4 +1,6 @@
 class Todo < ActiveRecord::Base
+  belongs_to :user
+
   def self.overdue
     order(:due_date).where("due_date < ?", Date.today)
   end
