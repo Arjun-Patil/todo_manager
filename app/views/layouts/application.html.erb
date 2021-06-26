@@ -19,6 +19,11 @@
           <%= link_to "sign-out", destroy_session_path, method: "delete" %>
         </p>
     <% end %>
+    <% if flash[:error] %>
+      <p class="flashError">
+        <%= flash[:error] %>
+      </p>
+    <% end %>
     <%= yield %>
     </article>
   </body>
