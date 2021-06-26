@@ -13,7 +13,10 @@
 
   <body>
     <article class="main">
-      <%= yield %>
+    <% if @current_user %>
+        <p class="userHeader">Welcome <%= @current_user.first_name %> </p>
+    <% end %>
+    <%= yield %>
     </article>
   </body>
 </html>
