@@ -9,9 +9,15 @@ class SessionsController < ApplicationController
 
     if user && user.authenticate(params[:password])
       session[:current_user_id] = user.id
-      render plain: "You have entered the correct password!"
+      redirect_to "/"
     else
       render plain: "You have entered the incorrect password"
     end
+  end
+
+  def destroy
+    session[:current_user_id] = nil
+    @current_user = nil
+    redirect_to "/"
   end
 end

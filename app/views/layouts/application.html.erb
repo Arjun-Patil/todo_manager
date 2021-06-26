@@ -14,7 +14,10 @@
   <body>
     <article class="main">
     <% if @current_user %>
-        <p class="userHeader">Welcome <%= @current_user.first_name %> </p>
+        <p class="userHeader">
+          Welcome <%= @current_user.first_name %> 
+          <%= link_to "sign-out", destroy_session_path, method: "delete" %>
+        </p>
     <% end %>
     <%= yield %>
     </article>
