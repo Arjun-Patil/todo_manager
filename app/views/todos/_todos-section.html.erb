@@ -7,7 +7,7 @@
     <ul class="DueToday">
       <li>
         <%= form_with(url: "/todos/#{todo.id}", method: "put") do %>
-          <input type="checkbox" name="completed" onclick= "this.form.submit()" <%= todo.completed ? "checked" : "" %> /> 
+          <%= check_box_tag "completed", nil, todo.completed ? true : false, onclick: "this.form.submit()" %>
         <% end %>
 
         <p class= '<%= todo.completed ? "todo-completedText" : "" %>' ><%= todo.todo_text %></p>

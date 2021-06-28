@@ -67,7 +67,7 @@ li {
   align-items: center;
 }
 
-input[type="checkbox"] {
+#completed {
   background-color: #ffffff;
   border: 1px solid #bfb8cc;
   border-radius: 4px;
