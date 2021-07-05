@@ -4,10 +4,6 @@ class Todo < ActiveRecord::Base
   validates :due_date, presence: true
   belongs_to :user
 
-  def self.of_user(user)
-    all.where(user_id: user.id)
-  end
-
   def self.overdue
     order(:due_date).where("due_date < ?", Date.today)
   end
