@@ -1,24 +1,20 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+<h1>Simple Todo Manager Application</h1>
 
-* Ruby version
+Link to the Application:  https://arjunp-todo-manager-saas-201.herokuapp.com/
 
-* System dependencies
+Demo User Credentials 
 
-* Configuration
+    Email    :    abc@gmail.com
+    
+    Password :    abc@9876
+    
+    
 
-* Database creation
+![1](https://user-images.githubusercontent.com/57123588/124486618-6951cc00-ddcb-11eb-9079-7167e0de28c0.jpg)
 
-* Database initialization
+![2](https://user-images.githubusercontent.com/57123588/124486613-67880880-ddcb-11eb-84c4-e469088c03a6.jpg)
 
-* How to run the test suite
+![3](https://user-images.githubusercontent.com/57123588/124486620-69ea6280-ddcb-11eb-9741-24be01ab1444.jpg)
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
